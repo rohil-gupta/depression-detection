@@ -73,11 +73,10 @@ jupyter notebook notebooks/01_eda.ipynb
 
 | Model | F1 (depression) | Accuracy |
 |---|---|---|
-| TF-IDF + Logistic Regression | — | — |
+| TF-IDF + Logistic Regression | 0.69 | 0.68 |
 | BERT fine-tuned | — | — |
 | Mental-BERT fine-tuned | — | — |
 
-*Fill in after running experiments.*
 
 ---
 
