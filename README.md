@@ -8,7 +8,7 @@ An NLP project that detects signs of depression in social media posts using a pr
 
 ## Dataset
 
-We use the [Reddit Depression Sampled dataset](https://huggingface.co/datasets/mrm8488/depression-sampled) (Hugging Face), which contains posts from r/depression and control subreddits with binary labels.
+We use the [Twitter Depression Sampled dataset](https://huggingface.co/datasets/indominousx/depression-detection) (Hugging Face), which contains posts from r/depression and control subreddits with binary labels.
 
 Download is handled automatically by `src/data.py` via the `datasets` library.
 
@@ -98,7 +98,7 @@ jupyter notebook notebooks/01_eda.ipynb
 
 ## Ethical Considerations
 
-- Posts are publicly available on Reddit and used under research norms.
+- Posts are publicly available on Twitter and used under research norms.
 - The binary label ("depression" / "non-depression") is a proxy for community membership, not a clinical diagnosis.
 - Model outputs carry uncertainty and should not inform clinical or personal decisions.
 - If you or someone you know is struggling, please contact the **988 Suicide & Crisis Lifeline** (call or text 988 in the US).

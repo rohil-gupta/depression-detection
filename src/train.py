@@ -8,7 +8,7 @@ import numpy as np
 from sklearn.metrics import classification_report, f1_score
 from scipy.sparse import hstack
 
-from data import load_reddit_dataset, preprocess, split_dataset
+from data import load_twitter_dataset, preprocess, split_dataset
 from features import build_tfidf, linguistic_features
 from model import TransformerConfig, build_baseline, load_transformer
 
@@ -19,7 +19,7 @@ RESULTS_DIR.mkdir(exist_ok=True)
 
 def run_baseline():
     print("Loading data...")
-    df = preprocess(load_reddit_dataset())
+    df = preprocess(load_twitter_dataset())
     train, val, test = split_dataset(df)
 
     tfidf = build_tfidf(train["text"].tolist())
@@ -44,7 +44,7 @@ def run_transformer(model_name: str):
     import evaluate
 
     print(f"Fine-tuning {model_name}...")
-    df = preprocess(load_reddit_dataset())
+    df = preprocess(load_twitter_dataset())
     train_df, val_df, test_df = split_dataset(df)
 
     config = TransformerConfig(model_name=model_name)

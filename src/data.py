@@ -6,9 +6,9 @@ from datasets import load_dataset
 from sklearn.model_selection import train_test_split
 
 
-def load_reddit_dataset(split: str = "train") -> pd.DataFrame:
-    """Load the sampled Reddit depression dataset from Hugging Face."""
-    ds = load_dataset("mrm8488/depression-sampled", split=split)
+def load_twitter_dataset(split: str = "train") -> pd.DataFrame:
+    """Load the sampled Twitter depression dataset from Hugging Face."""
+    ds = load_dataset("indominousx/depression-detection", split=split)
     return ds.to_pandas()
 
 
