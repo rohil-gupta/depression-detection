@@ -74,9 +74,8 @@ jupyter notebook notebooks/01_eda.ipynb
 | Model | F1 (depression) | Accuracy |
 |---|---|---|
 | TF-IDF + Logistic Regression | 0.69 | 0.68 |
-| BERT fine-tuned | — | — |
-| Mental-BERT fine-tuned | — | — |
-
+| BERT fine-tuned | 0.76 | 0.78 |
+Fine tuned Mental-BERT AUC: 0.873
 
 ---
 
